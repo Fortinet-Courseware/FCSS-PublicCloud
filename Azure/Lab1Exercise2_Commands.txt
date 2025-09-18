@@ -46,4 +46,4 @@ Step 1
 az vm create --resource-group RG-LAB1 --vnet-name VNET-LAB1 \
 --subnet Protected --admin-username fortiuser \
 --authentication-type password --name LAB1-VM --image Ubuntu2204 \
---public-ip-address ""
+--public-ip-address "" --size Standard_B2s
