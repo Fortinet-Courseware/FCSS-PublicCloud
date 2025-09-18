@@ -51,14 +51,14 @@ set as 65007
 set ebgp-multipath enable
 set graceful-restart enable
 config neighbor
-edit "172.17.100.68"
+edit "172.17.100.69"
 set capability-default-originate enable
 set ebgp-enforce-multihop enable
 set soft-reconfiguration enable
 set interface "port2"
 set remote-as 65515
 next
-edit "172.17.100.69"
+edit "172.17.100.70"
 set capability-default-originate enable
 set ebgp-enforce-multihop enable
 set soft-reconfiguration enable
