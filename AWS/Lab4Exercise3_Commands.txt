@@ -34,7 +34,7 @@ helm repo update
 Step 7
 -Copy the following command, and then enter it in the shell to install the chart in the default namespace, with the release name lab4:
 
-helm install  lab4 --namespace default FortiWeb-ingress-controller/fwb-k8s-ctrl
+helm install  lab4 --namespace default --set image.tag=2.1.0.64 FortiWeb-ingress-controller/fwb-k8s-ctrl
 
 Step 8
 -Copy the following command, and then enter it in the shell to create a new secret with the FortiWeb credentials:
