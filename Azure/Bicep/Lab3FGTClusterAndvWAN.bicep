@@ -20,6 +20,8 @@ param fortiGateImageSKU string = 'fortinet_fg-vm_payg_2023'
   '7.0.14'
   '7.2.8'
   '7.4.3'
+  '7.6.2'
+  '7.6.4'
   'latest'
 ])
 param fortiGateImageVersion string = 'latest'
