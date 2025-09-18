@@ -1398,7 +1398,8 @@ resource LinuxNetworkInterface 'Microsoft.Network/networkInterfaces@2023-09-01' 
           subnet: { 
            id: VNET2subnet1Id
                      } 
-          privateIPAllocationMethod: 'Dynamic'
+          privateIPAllocationMethod: 'Static'
+          privateIPAddress: '10.0.1.4'
           publicIPAddress: {
             id: LinuxVMpublicIPAddress.id
           }
@@ -1443,10 +1444,10 @@ resource LinuxVMpublicIPAddress 'Microsoft.Network/publicIPAddresses@2023-09-01'
   name: publicIPAddressName
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Standard'
   }
   properties: {
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
     publicIPAddressVersion: 'IPv4'
     dnsSettings: {
       domainNameLabel: dnsLabelPrefix
