@@ -1,4 +1,4 @@
-@description('Username for the Virtual Machine')
+description('Username for the Virtual Machine')
 param FGTadminUsername string
 
 @description('Password for the Virtual Machine')
@@ -575,7 +575,7 @@ var zone2 = [
 resource serialConsoleStorageAccountName 'Microsoft.Storage/storageAccounts@2023-01-01' = if (serialConsole == 'yes') {
   name: serialConsoleStorageAccountNamevar
   location: location
-  kind: 'Storage'
+  kind: 'StorageV2'
   sku: {
     name: serialConsoleStorageAccountType
   }
